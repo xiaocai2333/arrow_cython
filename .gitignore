@@ -1,0 +1,6 @@
+*.so
+zillizgis.cpp
+build/
+cmake-build-debug/
+.idea/
+.idea/*
