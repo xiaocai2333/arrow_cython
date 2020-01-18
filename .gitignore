@@ -1,6 +1,9 @@
 *.so
 zillizgis.cpp
+test_arrow.cpp
 build/
 cmake-build-debug/
 .idea/
 .idea/*
+dist/
+TestArrow*

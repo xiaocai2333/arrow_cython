@@ -3,12 +3,7 @@
 //
 
 
-#include <string>
 #include <iostream>
-#include <stdint.h>
-
-#include "arrow/api.h"
-#include "make_point.h"
 
 std::shared_ptr<arrow::Array>
 make_point(std::shared_ptr<arrow::Array> arr_x
@@ -30,6 +25,7 @@ make_point(std::shared_ptr<arrow::Array> arr_x,
 
     float a = 1.001;
     float b = 2.0102;
+    std::cout<< "hahahah"<< std::endl;
 
 //    status = builder.Append(std::to_string(a));
     status = builder.Append(std::to_string(b) + std::to_string(a));

@@ -1,6 +1,6 @@
-from distutils.core import setup
-from distutils.extension import Extension
+# from distutils.core import setup, Extension
 from Cython.Build import cythonize
+from setuptools import setup, Extension
 
 import os
 import numpy as np
@@ -24,4 +24,6 @@ for ext in gis_modules:
     # if you get weird linker errors or runtime crashes
     ext.define_macros.append(("_GLIBCXX_USE_CXX11_ABI", "0"))
 
-setup(ext_modules=gis_modules)
+setup(
+    name="TestArrow",
+    ext_modules=gis_modules)
